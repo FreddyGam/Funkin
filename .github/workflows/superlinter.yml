@@ -57,9 +57,9 @@ jobs:
           haxelib run lime setup
           haxelib install flixel-tools                             haxelib run flixel-tools setup
           haxelib update flixel
-          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
+          haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc.git
           haxelib git polymod https://github.com/larsiusprime/polymod.git
-          haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons
+          haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons.git
       - name: Create Version Tag
         run: echo "${{github.run_id}}" > VERSION
 
